@@ -1,0 +1,27 @@
+{
+  "name": "radio-apostolica",
+  "description": "Rádio Apostólica Web",
+  "main": "index.js",
+  "authors": [
+    "Weiner S. Ormanji <weinerso@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "homepage": "http://radio.igrejapostolica.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jPlayer": "jplayer#^2.9.2",
+    "jquery-shoutcast": "https://github.com/weinerso/jquery-shoutcast.git"
+  }
+}

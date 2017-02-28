@@ -1,0 +1,107 @@
+.player {
+	position: relative;
+	background-color: #333;
+	display: block;
+	height: 51px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	padding-left: 2px;
+	padding-right: 2px;
+
+	.leftblock {
+		display: inline-block;
+		/*#052EAE*/
+		float: left;
+		width: 50px;
+
+		a {
+			margin: 5px;
+			display: block; 
+			width: 40px; 
+			height: 40px; 
+			opacity: 0.75; 
+			outline: none;
+		}
+		a:hover { opacity: 1; }
+		
+		.play { background: url("../img/playerUI.png") no-repeat 0px 1px; }
+		.pause { background: url("../img/playerUI.png") no-repeat -40px 1px;}
+
+		.smooth { 
+			-webkit-transition: all 0.1s linear;
+			   -moz-transition: all 0.1s linear;
+				 -o-transition: all 0.1s linear;
+				    transition: all 0.1s linear; 
+		}
+	}
+
+	.centerblock {
+		float: left;
+		display: inline-block;
+		vertical-align: middle;
+		height: 50px;
+		text-align: left;
+		padding-left: 5px;
+
+		.radio-title {
+			margin: 12px 0px 1px 0px;
+			padding: 0;
+			font-size: 12px;
+		}
+
+		.time {
+			font-size: 11px;
+			color: #f0f0f0;
+		}
+	}
+
+	.rightblock {
+		float: right;
+		height: 50px;
+		display: inline-block;
+
+		.volumeBar { 
+			width: 60px;
+			cursor: pointer; 
+			margin: 24px 10px 0px 0px;
+			background-color: rgba(255,255,255,0.25);
+
+			.currentVolume {
+				position: relative;
+
+				.curvol { 
+					display: block;
+					height: 3px;
+					padding: 0;
+					background: #ccc;
+				}
+
+				a { 
+					display: block;
+					position: absolute;
+					top: -3px;
+					margin-left: -4px;
+					width: 10px;
+					height: 10px;
+					border-radius: 10px;
+					background: #ffffff;
+
+					div { 
+						display: block; 
+						width: 10px; 
+						height: 10px; 
+					}
+				}
+			}
+		}
+	}
+}
+/*
+.webPlayer .controls .progress { position: relative; display: block; margin: 0 130px 0 50px; text-align: left; }
+.webPlayer .controls .progress span { font-size: 12px; margin-left: 1px; color: #f0f0f0; }
+
+.webPlayer .controls .rightblock { position: absolute; right: 10px; width: 110px; top: 5px; }
+.webPlayer .controls .rightblock .volumeText { display: block; position: absolute; bottom: -12px; text-align: center; width: 80px; font-size: 11px; }
+*/
