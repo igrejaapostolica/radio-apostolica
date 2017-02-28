@@ -2,6 +2,7 @@ html, body {
 	height: 100%;
 	font-family: 'Open Sans', 'Segoe UI', sans-serif;
 	background-color: #333;
+	color: #000;
 }
 
 .flex-container {
@@ -11,9 +12,7 @@ html, body {
 	align-items: center;
 	align-content: center;
 
-	> * {
-		margin: auto;
-	}
+	> * { margin: auto; }
 }
 
 .content {
@@ -23,19 +22,29 @@ html, body {
 	background-color: #fff;
 	padding-top: 16px;
 	padding-bottom: 16px;
-}
 
-.logo {
-	width: 125px;
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-}
+	.logo {
+		width: 125px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
 
-.title {
-	font-size: 28px;
-	margin-bottom: 16px;
-	text-align: center;
+	.title {
+		font-size: 28px;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	.player-wrapper {
+		background-color: #052EAE;
+	}
+
+	.listeners {
+		text-align: center;
+		margin-top: 8px;
+		font-size: 12px;
+	}
 }
 
 .copyright {
@@ -43,10 +52,4 @@ html, body {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	text-align: center;
-}
-
-.listeners {
-	text-align: center;
-	margin-top: 4px;
-	font-size: 12px;
 }

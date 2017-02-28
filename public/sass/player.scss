@@ -1,6 +1,5 @@
 .player {
 	position: relative;
-	background-color: #333;
 	display: block;
 	height: 51px;
 	width: 300px;
@@ -12,7 +11,6 @@
 
 	.leftblock {
 		display: inline-block;
-		/*#052EAE*/
 		float: left;
 		width: 50px;
 
@@ -21,13 +19,13 @@
 			display: block; 
 			width: 40px; 
 			height: 40px; 
-			opacity: 0.75; 
+			opacity: 0.6; 
 			outline: none;
 		}
 		a:hover { opacity: 1; }
 		
-		.play { background: url("../img/playerUI.png") no-repeat 0px 1px; }
-		.pause { background: url("../img/playerUI.png") no-repeat -40px 1px;}
+		.play { background: url("../img/play.png") no-repeat center; }
+		.pause { background: url("../img/pause.png") no-repeat center; }
 
 		.smooth { 
 			-webkit-transition: all 0.1s linear;
@@ -98,10 +96,3 @@
 		}
 	}
 }
-/*
-.webPlayer .controls .progress { position: relative; display: block; margin: 0 130px 0 50px; text-align: left; }
-.webPlayer .controls .progress span { font-size: 12px; margin-left: 1px; color: #f0f0f0; }
-
-.webPlayer .controls .rightblock { position: absolute; right: 10px; width: 110px; top: 5px; }
-.webPlayer .controls .rightblock .volumeText { display: block; position: absolute; bottom: -12px; text-align: center; width: 80px; font-size: 11px; }
-*/

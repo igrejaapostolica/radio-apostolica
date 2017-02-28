@@ -19,9 +19,11 @@
       port : radioConfig.port,
       interval : 5000,
       stats : function() {
-        $('#title').text(this.get('songtitle'));
+        // Current Song
+        var songTitle = this.get('songtitle', 'Rádio Apostólica');
+        $('.radio-title').text(songTitle.substr(0, 20));
 
-        // Ouvintes
+        // Listeners
         var listeners = this.get('currentlisteners');
 
         if (listeners > 0) {
