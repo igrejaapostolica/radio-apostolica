@@ -36,14 +36,14 @@
 	}
 
 	.centerblock {
-		float: left;
 		display: inline-block;
-		vertical-align: middle;
+		width: 245px;
 		height: 50px;
-		text-align: left;
 		padding-left: 5px;
-
+		
 		.radio-title {
+			overflow: hidden;
+			width: 235px;
 			margin: 12px 0px 1px 0px;
 			padding: 0;
 			font-size: 12px;
@@ -52,47 +52,6 @@
 		.time {
 			font-size: 11px;
 			color: #f0f0f0;
-		}
-	}
-
-	.rightblock {
-		float: right;
-		height: 50px;
-		display: inline-block;
-
-		.volumeBar { 
-			width: 60px;
-			cursor: pointer; 
-			margin: 24px 10px 0px 0px;
-			background-color: rgba(255,255,255,0.25);
-
-			.currentVolume {
-				position: relative;
-
-				.curvol { 
-					display: block;
-					height: 3px;
-					padding: 0;
-					background: #ccc;
-				}
-
-				a { 
-					display: block;
-					position: absolute;
-					top: -3px;
-					margin-left: -4px;
-					width: 10px;
-					height: 10px;
-					border-radius: 10px;
-					background: #ffffff;
-
-					div { 
-						display: block; 
-						width: 10px; 
-						height: 10px; 
-					}
-				}
-			}
 		}
 	}
 }

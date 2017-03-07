@@ -22,6 +22,7 @@
   ],
   "dependencies": {
     "jPlayer": "jplayer#^2.9.2",
-    "jquery-shoutcast": "https://github.com/weinerso/jquery-shoutcast.git"
+    "jquery-shoutcast": "https://github.com/weinerso/jquery-shoutcast.git",
+    "jquery.marquee": "https://github.com/weinerso/jQuery.Marquee.git#master"
   }
 }

@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#224"> <!-- Chrome, Firefox OS, Opera and Vivaldi -->
   <meta name="msapplication-navbutton-color" content="#224"> <!-- Windows Phone -->
+
   <title>Rádio Apostólica Web</title>
 
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -20,14 +26,31 @@
   <div class="flex-container">
     <div>
       <div class="content">
-        <img src="logo.png" alt="logo" class="logo" />
+        <img src="img/rw_logo.png" alt="logo" class="logo" />
         <div class="title">Rádio Apostólica Web</div>
         <div class="player-wrapper">
-          <%- include ../partials/player.ejs %>
+          <!-- player -->
+          <div id="radio" class="player">
+            <div id="mainPlayer"></div>
+            <div class="leftblock">
+              <a tabindex="1" href="#" class="play smooth"></a>
+              <a tabindex="1" href="#" class="pause smooth" style="display: none;"></a>
+            </div>
+            <div class="centerblock">
+              <div class="radio-title-wrapper">
+                <div class="radio-title">Rádio Apostólica Web</div>
+              </div>
+              <div class="time">00:00</div>
+            </div>
+          </div>
+          <!-- end player -->
         </div>
         <div class="listeners">&nbsp;</div>
       </div>
-      <div class="copyright">&copy; <%= new Date().getFullYear() %> Igreja Apostólica</div>
+      <div class="copyright">
+        <a href="http://igrejaapostolica.org/" target="blank"><img src="img/ia_logo_white.png" alt="logo ia" class="mini-logo" /></a>
+        Igreja Apostólica &copy; <%= new Date().getFullYear() %>
+      </div>
       <a href="https://github.com/igrejaapostolica/radio-apostolica" class="opensource">GitHub</a>
     </div>
   </div>
@@ -35,7 +58,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="bower_components/jPlayer/dist/jplayer/jquery.jplayer.min.js"></script>
   <script src="bower_components/jquery-shoutcast/jquery.shoutcast.min.js"></script>
-  <script type="text/javascript" src="js/slider.min.js"></script>
+  <script src="bower_components/jquery.marquee/jquery.marquee.min.js"></script>
   <script type="text/javascript" src="js/player.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
