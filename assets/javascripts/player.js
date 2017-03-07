@@ -5,12 +5,11 @@
 		var playerID  = "#" + $(this).find("#mainPlayer").attr('id');
 		var settings = extras;
 		createPlayer(playerGUI, playerID, settings, extras);
-	}
-
+	};
 
 	function createPlayer(playerGUI, mainPlayer, settings, extras) {
 
-		var supplied = new Array;
+		var supplied = [];
 		$.each(settings.media, function(key, value) { if (key != 'poster') {supplied.push(key);}});
 		formats = supplied.join(', ');
 
@@ -18,7 +17,7 @@
 
 			ready: function () {
 				$(this).jPlayer("setMedia", settings.media);
-				if (settings.autoplay != null && settings.autoplay == true) {
+				if (settings.autoplay !== null && settings.autoplay === true) {
 					$(mainPlayer).jPlayer('play');
 				}
 			},

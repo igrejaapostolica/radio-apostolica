@@ -4,7 +4,7 @@
     host: '72.55.156.247',
     port: 9910,
     stream: '/stream'
-  }
+  };
 
   $(document).ready(function(){
     var $mq = null;
