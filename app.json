@@ -1,7 +1,7 @@
 {
   "name": "Rádio Apostólica",
   "description": "Rádio Apostólica Web",
-  "repository": "https://github.com/igrejaapostolica/radio-apostolica.git",
+  "repository": "https://github.com/igrejaapostolica/radio-apostolica-web.git",
   "keywords": ["node", "express", "static"],
   "image": "heroku/nodejs"
 }
